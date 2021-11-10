@@ -1,8 +1,7 @@
-package Controllers;
+package Core.Controllers;
 
-import TelegramBot.MainBot;
+import Core.TelegramBot.MainBot;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

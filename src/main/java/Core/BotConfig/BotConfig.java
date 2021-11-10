@@ -1,6 +1,6 @@
-package BotConfig;
+package Core.BotConfig;
 
-import TelegramBot.MainBot;
+import Core.TelegramBot.MainBot;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -24,18 +24,10 @@ public class BotConfig {
 
     @Bean
     public MainBot MainBot() {
-//        ApiContextInitializer.init();
-//        DefaultBotOptions options = ApiContext.getInstance(DefaultBotOptions.class);
-//
-//        options.setProxyHost(proxyHost);
-//        options.setProxyPort(proxyPort);
-//        options.setProxyType(proxyType);
-
-        MainBot mySuperTelegramBot = new MainBot();
-        mySuperTelegramBot.setBotUsername(botUserName);
-        mySuperTelegramBot.setBotToken(botToken);
-        mySuperTelegramBot.setWebhookPath(webHookPath);
-
-        return mySuperTelegramBot;
+        MainBot bot = new MainBot();
+        bot.setBotUsername(botUserName);
+        bot.setBotToken(botToken);
+        bot.setWebhookPath(webHookPath);
+        return bot;
     }
 }

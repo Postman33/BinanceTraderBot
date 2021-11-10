@@ -1,4 +1,4 @@
-package TelegramBot;
+package Core.TelegramBot;
 
 import lombok.SneakyThrows;
 import org.telegram.telegrambots.bots.TelegramWebhookBot;
@@ -28,7 +28,6 @@ public class MainBot extends TelegramWebhookBot {
         }
         return null;
     }
-// https://api.telegram.org/bot2108033644:AAF4CQxXG0vkf6_icGjxvzMWkT2xyGZ-wK8/setwebhook?url=https://7324-46-39-45-102.ngrok.io
     @Override
     public String getBotPath() {
         return webhookPath;

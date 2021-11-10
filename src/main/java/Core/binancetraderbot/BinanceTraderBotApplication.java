@@ -1,13 +1,13 @@
-package com.binancetraderbot;
+package Core.binancetraderbot;
 
-import Controllers.RController;
+import Core.Controllers.RController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackageClasses = RController.class)
-@ComponentScan(basePackages="BotConfig")
+//@ComponentScan(basePackageClasses = RController.class)
+@ComponentScan(basePackages= "Core")
 public class BinanceTraderBotApplication {
 
     public static void main(String[] args) {

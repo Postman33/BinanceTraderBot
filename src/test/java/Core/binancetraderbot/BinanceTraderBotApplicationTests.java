@@ -1,4 +1,4 @@
-package com.binancetraderbot;
+package Core.binancetraderbot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
